@@ -1,6 +1,5 @@
 import Header from './component/Header/Header';
 import Navbar from './component/Nav/Nav';
-import './index.css';
 
 function App() {
   return (

@@ -1,17 +1,15 @@
 import React from 'react'
-import styles from './Header.modules.css'
+import './Header.modules.css'
 
 
 export default function Header() {
     return (
-        <div id='home' className={styles.headerContainer}>
+        <div id='home' className='container headerContainer'>
             <h3>
-                <p>
-                    I<span>'</span>m
-                </p>
+                <p>I <span>'</span>m</p>
                 Ricardo
-                <h2>Full Stack Developer</h2>
             </h3>
+                <h2>Full Stack Developer</h2>
         </div>
     );
 }

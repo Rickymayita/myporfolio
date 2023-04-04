@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Nav/Nav.modules.css'
+import './Nav.modules.css'
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { TiGroupOutline } from 'react-icons/ti'
@@ -9,27 +9,27 @@ import { BsArrowDownCircle } from 'react-icons/bs'
 
 export default function Navbar() {
     return (
-        <div className={styles.navigation}>
+        <div className='navigation'>
             <a href="#home">
-                <AiOutlineHome classname={styles.icon} />
+                <AiOutlineHome className='icon active-nav' />
             </a>
             <a href="#about">
-                <AiOutlineUser classname={styles.icon} />
+                <AiOutlineUser className='icon' />
             </a>
             <a href="#members">
-                <TiGroupOutline classname={styles.icon} />
+                <TiGroupOutline className='icon' />
             </a>
             <a href="#contact">
-                <BiMessageRoundedDots classname={styles.icon} />
+                <BiMessageRoundedDots className='icon' />
             </a>
             <a href="#footer">
-                <BsArrowDownCircle classname={styles.icon} />
+                <BsArrowDownCircle className='icon' />
             </a>
         </div>
     )
 }
 
-let Icons = document.querySelectorAll('styles.navigation styles.icon');
+let Icons = document.querySelectorAll('.navigation .icon');
 Icons.forEach(icon =>{
     icon.addEventListener('click', ()=>{
         changeactive()
