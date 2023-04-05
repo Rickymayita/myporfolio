@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FaLaptop } from 'react-icons/fa'
 
 const Header = () => {
+    const [bar, setBar] = useState(false);
     return (
-        <Container>
+        <Container bar={bar}>
             <Logo>
                 <span className='green'><FaLaptop /></span>
                 <h1>Porfolio</h1>
@@ -16,6 +17,11 @@ const Header = () => {
                 <span><a href="#">Testimonials</a></span>
                 <span><a href="#">Porfolio</a></span>
             </Nav>
+            <div 
+            onClick={() => setBar(!bar)}
+            className="bars">
+                <div className="bar"></div>
+            </div>
         </Container>
     )
 }
@@ -30,6 +36,46 @@ max-width: 1280px;
 width: 80%;
 margin: 0 auto;
 padding: 1.5rem 0;
+@media (max-width: 763px){
+    width: 90%;
+}
+.bars{
+    display: nome;
+}
+@media (max-width: 640px){
+    .bars{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bar{
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: ${props => props.bar ? "transparent" : "#fff"};            
+            transition: all 400ms ease-in-out;
+            :before, :after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+            }
+
+            :before{
+                transform: ${props => props.bar ? "rotate(45deg)" : "translatey(10px)" };
+                transition: all 400ms ease-in-out;
+            }
+            
+            :after{
+                transform: ${props => props.bar ? "rotate(-45deg)" : "translatey(-10px)" };
+                transition: all 400ms ease-in-out;
+            }
+        }
+    }
+}
 `
 const Logo = styled.div`
 display: flex;
@@ -45,6 +91,23 @@ h1{
 }
 `
 const Nav = styled.div`
+@media (max-width: 640px){
+    position: absolute;
+        display: flex;
+        flex-direction: column;align-items: center;
+        justify-content: center;
+        background-color: #01be96;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        gap: 2rem;
+        height: ${props => props.bar ? "100vh" : 0};
+        transition: height 400ms ease-in-out;
+        overflow: hidden;
+}
 span{
     margin-left: 1rem;
     a{
