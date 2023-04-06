@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Container bar={bar}>
             <Logo>
-                <span className='green'><FaLaptop /></span>
+                <span className='blue'><FaLaptop /></span>
                 <h1>Porfolio</h1>
             </Logo>
             <Nav>
