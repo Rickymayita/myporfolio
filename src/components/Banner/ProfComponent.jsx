@@ -16,12 +16,15 @@ const ProfComponent = () => {
             <Social>
                 <p>Check out my</p>
                 <div className='social-icons'>
-                    <span><a href="#"><FaLinkedinIn /></a></span>
-                    <span><a href="#"><FaGithub /></a></span>
-                    <span><a href="#"><AiOutlineInstagram /></a></span>
+                    <span><a href="https://www.linkedin.com/in/ricardomaya/" target="blank"><FaLinkedinIn /></a></span>
+                    <span><a href="https://github.com/Rickymayita" target="blank"><FaGithub /></a></span>
+                    <span><a href="https://www.instagram.com/mrickytech/" target="blank"><AiOutlineInstagram /></a></span>
                 </div>
             </Social>
         </Texts>
+        <Profile>
+            <img src="https://avatars.githubusercontent.com/u/93308674?v=4" alt="profile" />
+        </Profile>
     </Container>
   )
 }
@@ -31,3 +34,4 @@ export default ProfComponent
 const Container = styled.div``
 const Texts = styled.div``
 const Social = styled.div``
+const Profile = styled.div``
