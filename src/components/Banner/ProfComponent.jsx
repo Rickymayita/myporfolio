@@ -41,6 +41,10 @@ const Container = styled.div`
     @media(max-width: 840px){
         width: 90%;
     }
+
+    @media(max-width: 640px){
+        flex-direction: column;
+    }
 `
 
 const Texts = styled.div`
@@ -87,6 +91,9 @@ const Social = styled.div`
 
     p{
         font-size: 0.9rem;
+        @media(max-width:690px){
+            font-size: 0.7rem;
+        }
     }
 
     .social-icons{
@@ -117,8 +124,20 @@ const Social = styled.div`
 const Profile = styled.div`
     img{
         width: 25rem;
+        clip-path: circle(50% at 50% 50%);        
         filter: drop-shadow(0px 10px 10px #0186be);
-        transition: transform 400ms ease-in-out;       
+        transition: transform 400ms ease-in-out;
+        @media(max-width: 790px){
+            width: 20rem;
+        }
+
+        @media(max-width: 660px){
+            width: 18rem;
+        }
+
+        @media(max-width: 640px){
+            width: 100%;
+        }
     }
 
     :hover img{

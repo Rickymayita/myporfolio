@@ -50,6 +50,8 @@ padding: 1.5rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0.5rem;
+        z-index: 100;
         .bar{
             position: absolute;
             width: 100%;
@@ -92,9 +94,10 @@ h1{
 `
 const Nav = styled.div`
 @media (max-width: 640px){
-    position: absolute;
+        position: fixed;
         display: flex;
-        flex-direction: column;align-items: center;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         background-color: #01be96;
         top: 0;
@@ -107,6 +110,7 @@ const Nav = styled.div`
         height: ${props => props.bar ? "100vh" : 0 };
         transition: height 400ms ease-in-out;
         overflow: hidden;
+        z-index: 99;
 }
 span{
     margin-left: 1rem;
