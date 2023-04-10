@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Card from './Card';
 import { IoLogoJavascript } from "react-icons/io";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { ImCss3 } from "react-icons/im";
@@ -38,6 +39,18 @@ const Skills = () => {
 
 export default Skills
 
-const Container = styled.div``
-const Cards = styled.div``
-const Card = styled.div``
+const Container = styled.div`
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    
+    h1{
+        padding-top: 1rem;
+    }
+`
+const Cards = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 4rem;
+`
