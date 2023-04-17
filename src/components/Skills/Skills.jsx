@@ -16,17 +16,17 @@ const Skills = () => {
                 <Card
                     Icon={IoLogoJavascript}
                     title={'Font'}
-                    disc={'Lorem'}
+                    disc={'¡Estoy listo para llevar tus proyectos al siguiente nivel! Con habilidades avanzadas en JavaScript y experiencia en el desarrollo front-end utilizando React, puedo crear interfaces de usuario altamente funcionales y visualmente atractivas. Además, tengo un sólido conocimiento de HTML y CSS, lo que me permite crear páginas web de alta calidad. ¡Déjame ayudarte a crear una experiencia en línea impresionante para tus usuarios!'}
                 />
                 <Card
                     Icon={SiRedux}
                     title={'Back'}
-                    disc={'Lorem'}
+                    disc={'¡Estoy emocionado de trabajar en el desarrollo back-end de tus proyectos! Con experiencia en el manejo de Redux, puedo crear aplicaciones web escalables y de alta calidad. Además, tengo un sólido conocimiento en SQL y Node.js, lo que me permite crear una base de datos segura y una conexión eficiente entre el front-end y el back-end. ¡Permíteme ayudarte a construir una plataforma sólida y funcional para tus usuarios!'}
                 />
                 <Card
                     Icon={DiPhotoshop}
                     title={'Desing'}
-                    disc={'Lorem'}
+                    disc={'!"Como diseñador gráfico con gran manejo de Illustrator, puedo crear diseños visualmente impactantes y atractivos para tus proyectos. Además, estoy familiarizado con Photoshop y Figma, lo que me permite crear diseños desde el concepto hasta la entrega final. ¡Permíteme ayudarte a crear una identidad visual impresionante y efectiva para tu marca o proyecto!'}
                 />
             </Cards>
         </Container>

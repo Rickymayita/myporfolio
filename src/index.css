@@ -40,3 +40,7 @@ html {
 .blue{
   color: #0196be;
 }
+
+.slick-list, .slick-slider, .silck-track{
+  padding: 3rem 0;
+}

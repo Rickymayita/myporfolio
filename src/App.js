@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         <ProfComponent />
       </Banner>
       <Skills />
+      <Project>
+        <Projects />
+      </Project>
     </Container>
   );
 }
@@ -25,4 +29,8 @@ const Banner = styled.div`
     height: 100%;
     padding-botton: 1rem;
   }
+`
+const Project = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  
 `
