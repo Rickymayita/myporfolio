@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Project = () => {
+const Project = (props) => {
+    const {img, disc} = props.item;
     return (
-        <Container>
-            <img src="https://i.imgur.com/E8ZTLMN.jpg" alt="CapaciTech Kids" />
+        <Container className='project'>
+            <img src={img} alt="proyecto" />
             <div className="disc">
                 <h1>Descripcion</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    Rem consequuntur corrupti, rerum libero fuga repellendus illo voluptatum optio.
+                <p>{disc}
                     <a href="#">demo</a>
                 </p>
             </div>
@@ -21,7 +21,7 @@ export default Project
 const Container = styled.div`
     height: 10rem;
     background-color: #4e5156;
-    margin: 0 0.5rem;
+    margin: 1.5rem 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
@@ -40,7 +40,7 @@ const Container = styled.div`
         bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
-        background-color: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.80));
+        background: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.80));
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;
