@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
+import Project from './Project';
 
 const SliderComp = () => {
     var settings = {
@@ -38,11 +39,12 @@ const SliderComp = () => {
     };
     return (
         <Slider {...settings}>
-            <div>Slider</div>
-            <div>Slider</div>
-            <div>Slider</div>
-            <div>Slider</div>
-            <div>Slider</div>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
         </Slider>
     )
 }

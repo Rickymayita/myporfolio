@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from './Card';
 import { IoLogoJavascript } from "react-icons/io";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { ImCss3 } from "react-icons/im";
 import { SiRedux } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
 
