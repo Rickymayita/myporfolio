@@ -3,6 +3,7 @@ import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Developers from "./components/Developers/Developers";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Project>
         <Projects />
+        <Developers />
       </Project>
     </Container>
   );
