@@ -8,8 +8,8 @@ const DeveloperSlider = (props) => {
   return (
     <Container>
         <Header>
-            <span><IoIosQuote /></span>
-            <span>
+            <span className='quote'><IoIosQuote /></span>
+            <span className='star'>
                 <AiFillStar />
                 <AiFillStar />
                 <AiFillStar />
@@ -33,9 +33,27 @@ const DeveloperSlider = (props) => {
 
 export default DeveloperSlider
 
-const Container = styled.div``
+const Container = styled.div`
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43,43,53) 100%);
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin: 0 1rem;
+`
 
-const Header = styled.div``
+const Header = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .quote{
+        font-size: 3rem;
+        color: #0196be;
+        opacity: 0.7;
+    }
+
+    .star{
+        color: #ffcd3c;
+        font-size: 1.3rem;
+    }
+`
 
 const Body = styled.p``
 
