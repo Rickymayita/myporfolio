@@ -15,8 +15,8 @@ function App() {
       <Skills />
       <Project>
         <Projects />
-        <Developers />
       </Project>
+        <Developers />
     </Container>
   );
 }
