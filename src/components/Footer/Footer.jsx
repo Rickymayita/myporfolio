@@ -63,18 +63,18 @@ const Profile = styled.div`
         h1{
             font-size: 1.2rem;
         }
-
+        
         p{
             width: 60%;
             paddin: 0.5rem;
         }
-
+        
         .link{
             h1{
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
             }
-
+            
             div{
                 display: flex;
                 align-items: center;
@@ -88,28 +88,53 @@ const Profile = styled.div`
                 }
             }
         }
+        
+        
+    }
+    .profiles{
+        h1{             
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
 
-        .profiles{
-            h1{                
-                font-size: 1.2rem;
-                padding: 1rem 0;
-            }
+        .icons{
+            display: flex;
+            align-items: center;
 
-            .icons{
-                display: flex;
+            span{
+                display: flex;                    
                 align-items: center;
-    
-                span{
-                    display: flex;
-                    align-items: center;
-                    background-color: #000;            
+                justify-content: center;
+                background-color: #000;
+                width: 2rem;
+                height: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 50px;
+
+                :hover{
+                    background-color: #0196be;
+                }
+                
+                a{
+                    margin-top: 0.2rem;
+                    color: #fff;
                 }
             }
         }
-
     }
 `
 
-const ArrowUp = styled.div``
+const ArrowUp = styled.div`
+    width: 2rem;
+    height: 2rem;
+    background-color: #0196be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+`
 
 const Form = styled.div``
