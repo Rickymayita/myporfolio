@@ -22,28 +22,28 @@ let developers =[
     {
         name: "Ezequiel Lescano",
         position: "Developer",
-        img_url:"",
+        img_url:"https://i.imgur.com/X4PYacf.jpg",
         stars: 5,
         disc: "Tuve el agrado de ser parte de Team de TA's de SoyHenry  con Ricardo, además de la cursada y encontré no sólo un compañero solidario, Si no también una persona perseverante y trabajadora, que busca superarse siempre."
     },
     {
         name: "Guillermo Rodriguez",
         position: "Developer",
-        img_url:"",
+        img_url:"https://i.imgur.com/6wZYQKa.jpg",
         stars: 4,
-        disc: "He tenido la dicha de poder contar ."
+        disc: "Fue una gran experiencia compartir con Ricardo el tiempo en el team de TA y colaborar junto a él la creación de CapaciTech Kids, aprender de él y tener la oportunidad de aportar el proyecto final en SoyHenry."
     },
     {
         name: "Brandom Reyes",
         position: "Developer",
-        img_url:"",
+        img_url:"https://i.imgur.com/CgJaDpk.jpg",
         stars: 4,
         disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo."
     },
     {
         name: "Abigail Cortés",
         position: "Developer",
-        img_url:"",
+        img_url:"https://i.imgur.com/BGgQp0J.jpg",
         stars: 4,
         disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo."
     },
