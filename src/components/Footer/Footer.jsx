@@ -38,7 +38,23 @@ const Footer = () => {
             </div>
             <ArrowUp><AiOutlineArrowUp /></ArrowUp>
         </Profile>
-        <Form></Form>
+        <Form>
+            <form>
+                <div className="name">
+                    <span><CgProfile /></span>
+                    <input type="text" placeholder='Nombre Completo..' />
+                </div>
+                <div className="email">
+                    <span><MdAlternateEmail /></span>
+                    <input type="email" placeholder='Email..' />
+                </div>
+                <div className="message">
+                    <span className='messageIcon'><FiMail /></span>
+                    <textarea cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </Form>
     </Container>
   )
 }
@@ -52,12 +68,15 @@ const Container = styled.div`
     width: 80%;
     max-width:1280px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     @media(max-width:840px){
         width: 90%;
     }
 `
 
 const Profile = styled.div`
+    flex: 1;
     .address{
         padding: 1rem 0;
         h1{
@@ -135,6 +154,56 @@ const ArrowUp = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
+
 `
 
-const Form = styled.div``
+const Form = styled.div`
+    flex: 1;
+    h1{
+        font-size: 1.3rem;
+        padding-bottom: 0.7rem;
+    }
+
+    form{
+        background-color: #191923;
+        padding: 0.8rem;
+        border-radius: 5px;
+        .name, .email, .message{
+            display: flex;
+            border: 1px solid gray;
+            margin-bottom: 0.5rem;
+            input, textarea{
+                width: 100%;
+                border: none;
+                outline: none;
+                color: #fff;
+                background-color: transparent;
+                padding: 1rem 0.5rem;
+            }
+            span{
+                background-color: #0196be;
+                width: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .messageIcon{
+                align-items: flex-start;
+                padding-top: 0.5rem;
+            }
+        }
+
+        button{
+            width: 5rem;
+            height: 1.8rem;
+            background-color: #0196be;
+            border: none;
+            border-radius: 5px;
+            filter: drop-shadow(0px 4px 5px #0196be);
+            cursor: pointer;
+            :hover{
+                filter: drop-shadow(0px 6px 9px #0196be);
+            }
+        } 
+    }
+`
