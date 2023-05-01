@@ -1,62 +1,74 @@
 import React from 'react'
 import styled from 'styled-components'
-import {MdAlternateEmail} from 'react-icons/md'
-import {CgProfile} from 'react-icons/cg'
-import {HiOutlineMailOpen} from 'react-icons/hi'
-import {AiFillGithub, AiFillLinkedin, AiOutlineArrowUp} from 'react-icons/ai'
-import {BsInstagram, BsTwitter} from 'react-icons/bs'
-import {FiMail, FiPhoneCall} from 'react-icons/fi'
+import { MdAlternateEmail } from 'react-icons/md'
+import { CgProfile } from 'react-icons/cg'
+import { HiOutlineMailOpen } from 'react-icons/hi'
+import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai'
+import { BsInstagram, BsTwitter } from 'react-icons/bs'
+import { FiMail, FiPhoneCall } from 'react-icons/fi'
+import { Slide, Zoom, Fade } from 'react-awesome-reveal'
 
 const Footer = () => {
-  return (
-    <Container>
-        <Profile>
-            <h1>Porfolio</h1>
-            <div className="address">
-                <h1>Dirección:</h1>
-                <p>Urquiza 307, Apóstoles, Misiones, Argentina</p>
-                <div className="link">
-                    <h1>Contacto directo</h1>
-                    <div>
-                        <span><FiPhoneCall /></span>
-                        <a href="tel:+5493758501161">+54 9 3578 50-1161</a>
+    const scrollUp = () => {
+        window.scroll({
+            top: 0,
+            behavisor: "smooth"
+        })
+    }
+    return (
+        <Container>
+            <Profile>
+                <Slide direction='left' delay={1}><h1>Porfolio</h1></Slide>
+                <div className="address">
+                    <Slide direction='left'><h1>Dirección:</h1></Slide>
+                    <Slide><p>Urquiza 307, Apóstoles, Misiones, Argentina</p></Slide>
+                    <div className="link">
+                        <Slide direction='left'><h1>Contacto directo</h1></Slide>
+                        <div>
+                            <Slide direction='left'><span><FiPhoneCall /></span></Slide>
+                            <Slide direction='left'><a href="tel:+5493758501161">+54 9 3578 50-1161</a></Slide>
+                        </div>
+                        <div>
+                            <Slide direction='left'><span><HiOutlineMailOpen /></span></Slide>
+                            <Slide><a href="mailto:mrickytech@gmail.com">mrickytech@gmail.com</a></Slide>
+                        </div>
                     </div>
-                    <div>
-                        <span><HiOutlineMailOpen /></span>
-                        <a href="mailto:mrickytech@gmail.com">mrickytech@gmail.com</a>
+                </div>
+                <div className="profiles">
+                    <Slide direction='left'><h1>Mira mis redes</h1></Slide>
+                    <div className="icons">
+                        <Zoom><span><a href="#" target="_blank"><AiFillGithub /></a></span></Zoom>
+                        <Zoom><span><a href="#" target="_blank"><AiFillLinkedin /></a></span></Zoom>
+                        <Zoom><span><a href="#" target="_blank"><BsInstagram /></a></span></Zoom>
+                        <Zoom><span><a href="#" target="_blank"><BsTwitter /></a></span></Zoom>
                     </div>
                 </div>
-            </div>
-            <div className="profiles">
-                <h1>Mira mis redes</h1>
-                <div className="icons">
-                    <span><a href="#" target="_blank"><AiFillGithub /></a></span>
-                    <span><a href="#" target="_blank"><AiFillLinkedin /></a></span>
-                    <span><a href="#" target="_blank"><BsInstagram /></a></span>
-                    <span><a href="#" target="_blank"><BsTwitter /></a></span>
-                </div>
-            </div>
-            <ArrowUp><AiOutlineArrowUp /></ArrowUp>
-        </Profile>
-        <Form>
-            <form>
-                <div className="name">
-                    <span><CgProfile /></span>
-                    <input type="text" placeholder='Nombre Completo..' />
-                </div>
-                <div className="email">
-                    <span><MdAlternateEmail /></span>
-                    <input type="email" placeholder='Email..' />
-                </div>
-                <div className="message">
-                    <span className='messageIcon'><FiMail /></span>
-                    <textarea cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
-                </div>
-                <button>Enviar</button>
-            </form>
-        </Form>
-    </Container>
-  )
+                <Fade><ArrowUp
+                    onClick={scrollUp}
+                ><AiOutlineArrowUp /></ArrowUp></Fade>
+
+            </Profile>
+            <Form>
+                <Slide direction='right'>
+                    <form>
+                        <div className="name">
+                            <span><CgProfile /></span>
+                            <input type="text" placeholder='Nombre Completo..' />
+                        </div>
+                        <div className="email">
+                            <span><MdAlternateEmail /></span>
+                            <input type="email" placeholder='Email..' />
+                        </div>
+                        <div className="message">
+                            <span className='messageIcon'><FiMail /></span>
+                            <textarea cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
+                        </div>
+                        <button>Enviar</button>
+                    </form>
+                </Slide>
+            </Form>
+        </Container>
+    )
 }
 
 export default Footer
