@@ -73,6 +73,11 @@ const Container = styled.div`
     @media(max-width:840px){
         width: 90%;
     }
+
+    @media(max-width:650px){
+        flex-direction: column;
+        gap: 3rem;
+    }
 `
 
 const Profile = styled.div`
@@ -86,6 +91,9 @@ const Profile = styled.div`
         p{
             width: 60%;
             paddin: 0.5rem;
+            @media(max-width:650px){
+                width: 100%;
+            }
         }
         
         .link{
@@ -154,6 +162,11 @@ const ArrowUp = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
+    @media(max-width:650px){
+        position: absolute;
+        right: 3rem;
+        top: 16rem;
+    }
 
 `
 
