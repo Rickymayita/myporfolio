@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { MdAlternateEmail } from 'react-icons/md'
 import { CgProfile } from 'react-icons/cg'
@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai'
 import { BsInstagram, BsTwitter } from 'react-icons/bs'
 import { FiMail, FiPhoneCall } from 'react-icons/fi'
 import { Slide, Zoom, Fade } from 'react-awesome-reveal'
+import emailjs from '@emailjs/browser'
 
 const Footer = () => {
     const scrollUp = () => {
@@ -15,6 +16,21 @@ const Footer = () => {
             behavisor: "smooth"
         })
     }
+
+    const [message, setMessage] = useState('')
+
+    const sendEmail = (event) =>{
+        event.preventDefault();
+
+        emailjs.sendForm('service_twkt77r', 'template_qvjr5r9', event.target, '7JTSqBjGyJqs1T_F6')
+        .then(response => {
+            console.log(response)
+            setMessage('Gracias por escribirme, me pondré en contacto con vos a la brevedad')
+            event.target.reset()
+        })
+        .catch(error => console.log(error))
+    }
+
     return (
         <Container>
             <Profile>
@@ -37,10 +53,10 @@ const Footer = () => {
                 <div className="profiles">
                     <Slide direction='left'><h1>Mira mis redes</h1></Slide>
                     <div className="icons">
-                        <Zoom><span><a href="#" target="_blank"><AiFillGithub /></a></span></Zoom>
-                        <Zoom><span><a href="#" target="_blank"><AiFillLinkedin /></a></span></Zoom>
-                        <Zoom><span><a href="#" target="_blank"><BsInstagram /></a></span></Zoom>
-                        <Zoom><span><a href="#" target="_blank"><BsTwitter /></a></span></Zoom>
+                        <Zoom><span><a href="https://github.com/Rickymayita" target="_blank"><AiFillGithub /></a></span></Zoom>
+                        <Zoom><span><a href="https://www.linkedin.com/in/ricardomaya/" target="_blank"><AiFillLinkedin /></a></span></Zoom>
+                        <Zoom><span><a href="https://www.instagram.com/mrickytech/" target="_blank"><BsInstagram /></a></span></Zoom>
+                        <Zoom><span><a href="https://twitter.com/mrickytech" target="_blank"><BsTwitter /></a></span></Zoom>
                     </div>
                 </div>
                 <Fade><ArrowUp
@@ -50,21 +66,22 @@ const Footer = () => {
             </Profile>
             <Form>
                 <Slide direction='right'>
-                    <form>
+                    <form onSubmit={sendEmail}>
                         <div className="name">
                             <span><CgProfile /></span>
-                            <input type="text" placeholder='Nombre Completo..' />
+                            <input type="text" name='userName' placeholder='Nombre Completo..' />
                         </div>
                         <div className="email">
                             <span><MdAlternateEmail /></span>
-                            <input type="email" placeholder='Email..' />
+                            <input type="email" name='userMail' placeholder='Email..' />
                         </div>
                         <div className="message">
                             <span className='messageIcon'><FiMail /></span>
-                            <textarea cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
+                            <textarea name='userMessage' cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
                         </div>
                         <button>Enviar</button>
                     </form>
+                    {message && <p className='mensajito'>{message}</p>}
                 </Slide>
             </Form>
         </Container>
@@ -222,6 +239,7 @@ const Form = styled.div`
             width: 5rem;
             height: 1.8rem;
             background-color: #0196be;
+            color: #fff;
             border: none;
             border-radius: 5px;
             filter: drop-shadow(0px 4px 5px #0196be);
@@ -229,6 +247,11 @@ const Form = styled.div`
             :hover{
                 filter: drop-shadow(0px 6px 9px #0196be);
             }
-        } 
+        }
     }
+        .mensajito{
+            font-size: 1.3rem;
+            color: #0196be;
+            margin-top: 0.8rem;
+        }
 `

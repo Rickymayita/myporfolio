@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { IoIosQuote } from 'react-icons/io'
-import { AiFillStar } from 'react-icons/ai'
+import { AiFillStar, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const DeveloperSlider = (props) => {
-    const { name, position, img_url, stars, disc } = props.item
+    const { name, position, img_url, stars, disc, linkedin, github } = props.item
     return (
         <Container>
             <Header>
@@ -25,6 +25,10 @@ const DeveloperSlider = (props) => {
                 <div className="details">
                     <h1>{name}</h1>
                     <p>{position}</p>
+                </div>
+                <div className="socials">
+                <span><a href={linkedin} target="_blank"><AiFillGithub /></a></span>
+                <span><a href={github} target="_blank"><AiFillLinkedin /></a></span>
                 </div>
             </Footer>
         </Container>
@@ -92,6 +96,15 @@ const Footer = styled.div`
         color: rgba(255, 255, 255, 0.500);
         @media(max-width:538px){
             font-size: 0.6rem;
+        }
+    }
+    .socials{
+        display: flex;
+        flex-direction: column;
+
+        a{
+            font-size: 1.8rem;
+            color: #0196be;
         }
     }
 `

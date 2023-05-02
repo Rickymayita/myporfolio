@@ -10,43 +10,56 @@ let developers = [
     name: "Mauro Moyano",
     position: "Developer",
     img_url: "https://i.imgur.com/zVuA1Sp.jpg",
-    stars: 4,
-    disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo."
+    stars: 5,
+    disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo.",
+    linkedin: "https://www.linkedin.com/in/mauro-moyano-dev-full-stack/",
+    github: "github.com/MauroMoyano ",
+  
   },
   {
     name: "Lautario Garcia",
     position: "Developer",
     img_url: "https://i.imgur.com/Ey3XQOy.jpg",
     stars: 4,
-    disc: "Agradezco haberlo llegado a conocer, fue un gran compañero durante la cursada y ahora tras haberla terminado. Aportó muchas ideas y conocimientos al grupo y siempre colaboró para ayudar a la comunidad que fue formando."
+    disc: "Agradezco haberlo llegado a conocer, fue un gran compañero durante la cursada y ahora tras haberla terminado. Aportó muchas ideas y conocimientos al grupo y siempre colaboró para ayudar a la comunidad que fue formando.",
+    linkedin: "https://www.linkedin.com/in/garcialautaro/",
+    github: "https://github.com/lechugaxthz",
   },
   {
     name: "Ezequiel Lescano",
     position: "Developer",
     img_url: "https://i.imgur.com/X4PYacf.jpg",
     stars: 5,
-    disc: "Tuve el agrado de ser parte de Team de TA's de SoyHenry  con Ricardo, además de la cursada y encontré no sólo un compañero solidario, Si no también una persona perseverante y trabajadora, que busca superarse siempre."
+    disc: "Tuve el agrado de ser parte de Team de TA's de SoyHenry  con Ricardo, además de la cursada y encontré no sólo un compañero solidario, Si no también una persona perseverante y trabajadora, que busca superarse siempre.",
+    linkedin: "https://www.linkedin.com/in/eze-lescano83/",
+    github: "https://github.com/ezelescano",
   },
   {
     name: "Guillermo Rodriguez",
     position: "Developer",
     img_url: "https://i.imgur.com/6wZYQKa.jpg",
     stars: 4,
-    disc: "Fue una gran experiencia compartir con Ricardo el tiempo en el team de TA y colaborar junto a él la creación de CapaciTech Kids, aprender de él y tener la oportunidad de aportar el proyecto final en SoyHenry."
+    disc: "Fue una gran experiencia compartir con Ricardo el tiempo en el team de TA y colaborar junto a él la creación de CapaciTech Kids, aprender de él y tener la oportunidad de aportar el proyecto final en SoyHenry.",
+    linkedin: "https://www.linkedin.com/in/guillermo-rodr%C3%ADguez-74b10039/",
+    github: "https://github.com/MemoRodz",
   },
   {
     name: "Brandom Reyes",
     position: "Developer",
     img_url: "https://i.imgur.com/CgJaDpk.jpg",
     stars: 4,
-    disc: "Trabajar con Ricardo en Capacitech Kids y compartir con él siendo TA me demostró la gran persona que es y las grandes capacidades que tiene, no solo a nivel técnico (que es importante) si no a nivel personal (que es fundamental)."
+    disc: "Trabajar con Ricardo en Capacitech Kids y compartir con él siendo TA me demostró la gran persona que es y las grandes capacidades que tiene, no solo a nivel técnico (que es importante) si no a nivel personal (que es fundamental).",
+    linkedin: "https://www.linkedin.com/in/brandonreyesb/",
+    github: "https://github.com/Brareyesb15",
   },
   {
     name: "Abigail Cortés",
     position: "Developer",
     img_url: "https://i.imgur.com/BGgQp0J.jpg",
-    stars: 4,
-    disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo."
+    stars: 5,
+    disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo.",
+    linkedin: "https://www.linkedin.com/in/abigail-cort%C3%A9s-s%C3%A1nchez/",
+    github: "https://github.com/abigail96-hub",
   },
 ]
 
