@@ -14,9 +14,10 @@ const ProfComponent = () => {
                     <h1 className='blue'>Ricardo Ariel Maya</h1>
                     <h3>Full Stack Developer</h3>
                     <p>Soy un programador Full Stack apasionado por la creación de aplicaciones web de alta calidad. Tengo habilidades en HTML, CSS, JavaScript, React, Redux, Node.js, Express, Postgres, Sequelize, Figma y Scrum. Me mantengo actualizado con las últimas tecnologías y estoy comprometido a seguir aprendiendo y evolucionando para ofrecer soluciones innovadoras y eficientes. ¡Estoy emocionado de trabajar en nuevos proyectos y crear soluciones web de alta calidad!</p>
-                    <button>Let's talk</button>
+                    
+                    <a href="./CVRicardoArielMaya.pdf" download><button>Mi CV</button></a>
                     <Social>
-                        <p>Check out my</p>
+                        <p>Mira mis redes</p>
                         <div className='social-icons'>
                             <span><a href="https://www.linkedin.com/in/ricardomaya/" target="blank"><FaLinkedinIn /></a></span>
                             <span><a href="https://github.com/Rickymayita" target="blank"><FaGithub /></a></span>
@@ -132,6 +133,7 @@ const Profile = styled.div`
         clip-path: circle(50% at 50% 50%);        
         filter: drop-shadow(0px 10px 10px #0186be);
         transition: transform 400ms ease-in-out;
+        
         @media(max-width: 790px){
             width: 20rem;
         }
@@ -142,6 +144,9 @@ const Profile = styled.div`
 
         @media(max-width: 640px){
             width: 100%;
+            position: relative;
+            z-index:5;
+            
         }
     }
 

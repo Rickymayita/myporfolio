@@ -10,12 +10,12 @@ const Header = () => {
                 <span className='blue'><FaLaptop /></span>
                 <h1>Porfolio</h1>
             </Logo>
-            <Nav>
+            <Nav bar={bar}>
                 <span><a href="#home">Home</a></span>
                 <span><a href="#skills">Skills</a></span>
-                <span><a href="#projet">Proyects</a></span>
-                <span><a href="#develepers">Testimonials</a></span>
-                <span><a href="#footers">Porfolio</a></span>
+                <span><a href="#projet">Proyectos</a></span>
+                <span><a href="#develepers">Testimonios</a></span>
+                <span><a href="#contactame">Contactame</a></span>
             </Nav>
             <div 
             onClick={() => setBar(!bar)}
@@ -99,7 +99,7 @@ const Nav = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #01be96;
+        background-color: #0196be;
         top: 0;
         right: 0;
         bottom: 0;

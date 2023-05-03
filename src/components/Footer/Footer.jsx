@@ -18,23 +18,48 @@ const Footer = () => {
     }
 
     const [message, setMessage] = useState('')
+    const [userName, setUserName] = useState('');
+    const [userMail, setUserMail] = useState('');
+    const [userMessage, setUserMessage] = useState('');
+    const [nameError, setNameError] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [messageError, setMessageError] = useState('');
 
-    const sendEmail = (event) =>{
+    const sendEmail = (event) => {
         event.preventDefault();
 
+        if (!userName || !/^[a-zA-Z ]+$/.test(userName)) {
+            setNameError('Por favor ingresa un nombre válido.');
+            return;
+        }
+        setNameError('');
+        if (!userMail || !/\S+@\S+\.\S+/.test(userMail)) {
+            setEmailError('Por favor ingresa un email válido.');
+            return;
+        }
+        setEmailError('');
+        if (!userMessage) {
+            setMessageError('Por favor ingresa un mensaje.');
+            return;
+        }
+        setMessageError('');
+
         emailjs.sendForm('service_twkt77r', 'template_qvjr5r9', event.target, '7JTSqBjGyJqs1T_F6')
-        .then(response => {
-            console.log(response)
-            setMessage('Gracias por escribirme, me pondré en contacto con vos a la brevedad')
-            event.target.reset()
-        })
-        .catch(error => console.log(error))
+            .then(response => {
+                console.log(response)
+                setMessage('Gracias por escribirme, me pondré en contacto con vos a la brevedad')
+                setUserName('')
+                setUserMail('')
+                setUserMessage('')
+                event.target.reset()
+            })
+            .catch(error => console.log(error))
     }
 
     return (
         <Container>
-            <Profile>
-                <Slide direction='left' delay={1}><h1>Porfolio</h1></Slide>
+            <Profile id='contactame'>
+                <Slide direction='left' delay={1}><h1>Contactame</h1></Slide>
                 <div className="address">
                     <Slide direction='left'><h1>Dirección:</h1></Slide>
                     <Slide><p>Urquiza 307, Apóstoles, Misiones, Argentina</p></Slide>
@@ -69,15 +94,21 @@ const Footer = () => {
                     <form onSubmit={sendEmail}>
                         <div className="name">
                             <span><CgProfile /></span>
-                            <input type="text" name='userName' placeholder='Nombre Completo..' />
+                            <input type="text" name='userName' placeholder='Nombre Completo..'
+                                value={userName} onChange={(e) => setUserName(e.target.value)} />
+                            {nameError && <p className='error'>{nameError}</p>}
                         </div>
                         <div className="email">
                             <span><MdAlternateEmail /></span>
-                            <input type="email" name='userMail' placeholder='Email..' />
+                            <input type="email" name='userMail' placeholder='Email..'
+                                value={userMail} onChange={(e) => setUserMail(e.target.value)} />
+                            {emailError && <p className='error'>{emailError}</p>}
                         </div>
                         <div className="message">
                             <span className='messageIcon'><FiMail /></span>
-                            <textarea name='userMessage' cols="30" rows="10" placeholder='Deja tu mensaje..'></textarea>
+                            <textarea name='userMessage' cols="30" rows="10" placeholder='Deja tu mensaje..'
+                                value={userMessage} onChange={(e) => setUserMessage(e.target.value)}></textarea>
+                            {messageError && <p className='error'>{messageError}</p>}
                         </div>
                         <button>Enviar</button>
                     </form>
@@ -222,6 +253,7 @@ const Form = styled.div`
                 background-color: transparent;
                 padding: 1rem 0.5rem;
             }
+            
             span{
                 background-color: #0196be;
                 width: 3rem;
@@ -233,6 +265,10 @@ const Form = styled.div`
                 align-items: flex-start;
                 padding-top: 0.5rem;
             }
+        }
+
+        .error{
+            color: red;
         }
 
         button{
@@ -249,9 +285,10 @@ const Form = styled.div`
             }
         }
     }
-        .mensajito{
-            font-size: 1.3rem;
-            color: #0196be;
-            margin-top: 0.8rem;
-        }
+    .mensajito{
+        font-size: 1.3rem;
+        color: #0196be;
+        margin-top: 0.8rem;
+    }
+    
 `
