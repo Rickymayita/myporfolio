@@ -8,11 +8,11 @@ const Header = () => {
         <Container bar={bar}>
             <Logo>
                 <span className='blue'><FaLaptop /></span>
-                <h1>Porfolio</h1>
+                <h1>Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#skills">Skills</a></span>
+                <span><a href="#home">Inicio</a></span>
+                <span><a href="#skills">Habilidades técnicas</a></span>
                 <span><a href="#projet">Proyectos</a></span>
                 <span><a href="#develepers">Testimonios</a></span>
                 <span><a href="#contactame">Contactame</a></span>

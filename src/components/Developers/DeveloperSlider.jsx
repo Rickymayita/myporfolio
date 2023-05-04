@@ -27,8 +27,8 @@ const DeveloperSlider = (props) => {
                     <p>{position}</p>
                 </div>
                 <div className="socials">
-                <span><a href={linkedin} target="_blank"><AiFillGithub /></a></span>
-                <span><a href={github} target="_blank"><AiFillLinkedin /></a></span>
+                <span><a href={github} target="_blank"><AiFillGithub /></a></span>
+                <span><a href={linkedin} target="_blank"><AiFillLinkedin /></a></span>
                 </div>
             </Footer>
         </Container>

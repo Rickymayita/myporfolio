@@ -13,7 +13,7 @@ let developers = [
     stars: 5,
     disc: "He tenido la dicha de poder contar con Ricardo como compañero porque siempre ha encontrado las soluciones mas creativas a los problemas mas insólitos. un gran trabajador en equipo.",
     linkedin: "https://www.linkedin.com/in/mauro-moyano-dev-full-stack/",
-    github: "github.com/MauroMoyano ",
+    github: "https://github.com/MauroMoyano ",
   
   },
   {
