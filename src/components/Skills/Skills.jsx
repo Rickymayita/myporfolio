@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         <Container id='skills'>
             <Slide direction='down'>
-                <h4>Mi Top <span className="blue">Skill</span></h4>
+                <h4>Mi Top de <span className="blue">Habilidades</span></h4>
                 <h1>Lo que hago</h1>
             </Slide>
             <Cards>
