@@ -78,10 +78,10 @@ const Footer = () => {
                 <div className="profiles">
                     <Slide direction='left'><h1>Mira mis redes</h1></Slide>
                     <div className="icons">
-                        <Zoom><span><a href="https://github.com/Rickymayita" target="_blank" rel="noopener"><AiFillGithub /></a></span></Zoom>
-                        <Zoom><span><a href="https://www.linkedin.com/in/ricardomaya/" target="_blank" rel="noopener"><AiFillLinkedin /></a></span></Zoom>
-                        <Zoom><span><a href="https://www.instagram.com/mrickytech/" target="_blank" rel="noopener"><BsInstagram /></a></span></Zoom>
-                        <Zoom><span><a href="https://twitter.com/mrickytech" target="_blank" rel="noopener"><BsTwitter /></a></span></Zoom>
+                        <Zoom><span><a href="https://github.com/Rickymayita" target="_blank" rel="noreferrer"><AiFillGithub /></a></span></Zoom>
+                        <Zoom><span><a href="https://www.linkedin.com/in/ricardomaya/" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></span></Zoom>
+                        <Zoom><span><a href="https://www.instagram.com/mrickytech/" target="_blank" rel="noreferrer"><BsInstagram /></a></span></Zoom>
+                        <Zoom><span><a href="https://twitter.com/mrickytech" target="_blank" rel="noreferrer"><BsTwitter /></a></span></Zoom>
                     </div>
                 </div>
                 <Fade><ArrowUp
