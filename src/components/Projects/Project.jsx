@@ -9,7 +9,7 @@ const Project = (props) => {
             <div className="disc">
                 <h1>Descripcion</h1>
                 <p>{disc}
-                    <a href="#">demo</a>
+                    <a href="https://mrickytech.netlify.app/">demo</a>
                 </p>
             </div>
         </Container>
