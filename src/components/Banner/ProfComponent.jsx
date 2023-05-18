@@ -130,16 +130,19 @@ const Social = styled.div`
 const Profile = styled.div`
     img{
         width: 25rem;
-        clip-path: circle(50% at 50% 50%);        
+        height:25rem
+        border-radius: 50%;        
         filter: drop-shadow(0px 10px 10px #0186be);
         transition: transform 400ms ease-in-out;
         
         @media(max-width: 790px){
             width: 20rem;
+            height: 20rem;
         }
 
         @media(max-width: 660px){
             width: 18rem;
+            height: 18rem;
         }
 
         @media(max-width: 640px){
