@@ -14,7 +14,7 @@ let data = [
         disc: "proyecto grupal de plataforma E-Learning con cursos gratuitos, pasarela de donaciones, asistente IA y dashboards personalizados para usuarios, docentes y administradores"
     },
     {
-        img: "https://i.imgur.com/EgucVTH.jpg",
+        img: "https://i.imgur.com/8WqKjpa.jpg",
         disc: "proyecto individual de página estática implementada en React, mostrando proyectos anteriores, habilidades técnicas y experiencia profesional."
     },
     {
@@ -26,7 +26,7 @@ let data = [
         disc: "proyecto grupal de plataforma E-Learning con cursos gratuitos, pasarela de donaciones, asistente IA y dashboards personalizados para usuarios, docentes y administradores"
     },
     {
-        img: "https://i.imgur.com/EgucVTH.jpg",
+        img: "https://i.imgur.com/8WqKjpa.jpg",
         disc: "proyecto individual de página estática implementada en React, mostrando proyectos anteriores, habilidades técnicas y experiencia profesional."
     }
 ];
