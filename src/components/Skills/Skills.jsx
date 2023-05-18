@@ -4,7 +4,7 @@ import Card from './Card';
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Zoom } from 'react-awesome-reveal';
 
 const Skills = () => {
     return (
@@ -17,17 +17,17 @@ const Skills = () => {
                 <Slide direction='left'>
                     <Card
                         Icon={IoLogoJavascript}
-                        title={'Font'}
+                        title={'Front'}
                         disc={'¡Estoy listo para llevar tus proyectos al siguiente nivel! Con habilidades avanzadas en JavaScript y experiencia en el desarrollo front-end utilizando React, puedo crear interfaces de usuario altamente funcionales y visualmente atractivas. Además, tengo un sólido conocimiento de HTML y CSS, lo que me permite crear páginas web de alta calidad. ¡Déjame ayudarte a crear una experiencia en línea impresionante para tus usuarios!'}
                     />
                 </Slide>
-                <Slide direction='up'>
+                <Zoom>
                     <Card
                         Icon={SiRedux}
                         title={'Back'}
                         disc={'¡Estoy emocionado de trabajar en el desarrollo back-end de tus proyectos! Con experiencia en el manejo de Redux, puedo crear aplicaciones web escalables y de alta calidad. Además, tengo un sólido conocimiento en SQL y Node.js, lo que me permite crear una base de datos segura y una conexión eficiente entre el front-end y el back-end. ¡Permíteme ayudarte a construir una plataforma sólida y funcional para tus usuarios!'}
                     />
-                </Slide>
+                </Zoom>
                 <Slide direction='right'>
                     <Card
                         Icon={DiPhotoshop}

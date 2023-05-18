@@ -28,7 +28,7 @@ const ProfComponent = () => {
             </Slide>
             <Slide direction='right'>
                 <Profile>
-                    <img src="https://avatars.githubusercontent.com/u/93308674?v=4" alt="profile" />
+                    <img src="https://i.imgur.com/0aWvZJJ.jpg" alt="profile" />
                 </Profile>
             </Slide>
         </Container>
