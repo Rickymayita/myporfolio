@@ -130,8 +130,9 @@ const Social = styled.div`
 const Profile = styled.div`
     img{
         width: 25rem;
-        height:25rem
-        border-radius: 50%;        
+        height: 25rem;
+        border-radius: 50%;
+        object-fit: cover;        
         filter: drop-shadow(0px 10px 10px #0186be);
         transition: transform 400ms ease-in-out;
         
