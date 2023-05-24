@@ -7,27 +7,27 @@ import styled from 'styled-components';
 let data = [
     {
         img: "https://i.imgur.com/pkiP62P.jpg",
-        disc: "proyecto individual de una aplicación web que permita a los usuarios explorar y buscar info sobre los personajes de TV Rick and Morty usando la API pública"
+        disc: "¡Descubre Rick and Morty en línea! Mi proyecto individual muestra personajes y su info. ¡Explora y busca en web!"
     },
     {
         img: "https://i.imgur.com/E8ZTLMN.jpg",
         disc: "proyecto grupal de plataforma E-Learning con cursos gratuitos, pasarela de donaciones, asistente IA y dashboards personalizados para usuarios, docentes y administradores"
     },
     {
-        img: "https://i.imgur.com/8WqKjpa.jpg",
-        disc: "proyecto individual de página estática implementada en React, mostrando proyectos anteriores, habilidades técnicas y experiencia profesional."
+        img: "https://i.imgur.com/zI7ipKP.jpg",
+        disc: "¡Explora Pokémon en línea! Mi proyecto individual muestra personajes y características. ¡Descubre y captura en una experiencia interactiva! ¡Únete ahora!"
     },
     {
         img: "https://i.imgur.com/pkiP62P.jpg",
-        disc: "proyecto individual de una aplicación web que permita a los usuarios explorar y buscar info sobre los personajes de TV Rick and Morty usando la API pública"
+        disc: "¡Descubre Rick and Morty en línea! Mi proyecto individual muestra personajes y su info. ¡Explora y busca en web!"
     },
     {
         img: "https://i.imgur.com/E8ZTLMN.jpg",
         disc: "proyecto grupal de plataforma E-Learning con cursos gratuitos, pasarela de donaciones, asistente IA y dashboards personalizados para usuarios, docentes y administradores"
     },
     {
-        img: "https://i.imgur.com/8WqKjpa.jpg",
-        disc: "proyecto individual de página estática implementada en React, mostrando proyectos anteriores, habilidades técnicas y experiencia profesional."
+        img: "https://i.imgur.com/zI7ipKP.jpg",
+        disc: "¡Explora Pokémon en línea! Mi proyecto individual muestra personajes y características. ¡Descubre y captura en una experiencia interactiva! ¡Únete ahora!"
     }
 ];
 
