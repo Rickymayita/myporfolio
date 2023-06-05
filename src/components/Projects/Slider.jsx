@@ -21,20 +21,11 @@ let data = [
         url: "https://pokedexmrickytech.netlify.app/"
     },
     {
-        img: "https://i.imgur.com/pkiP62P.jpg",
-        disc: "¡Descubre Rick and Morty en línea! Mi proyecto individual muestra personajes y su info. ¡Explora y busca en web!",
-        url: "#"
+        img: "https://i.imgur.com/rOToCO9.jpg",
+        disc: "RuteApp: una aplicación web con TypeScript y React que utiliza Mapbox para mostrar ubicaciones, buscar destinos y trazar rutas personalizadas. ¡Descubre el mundo y encuentra tu camino con facilidad!",
+        url: "https://mrouteapp.netlify.app/"
     },
-    {
-        img: "https://i.imgur.com/E8ZTLMN.jpg",
-        disc: "proyecto grupal de plataforma E-Learning con cursos gratuitos, pasarela de donaciones, asistente IA y dashboards personalizados para usuarios, docentes y administradores",
-        url: "https://capacitechkids-production-dff9.up.railway.app/"
-    },
-    {
-        img: "https://i.imgur.com/zI7ipKP.jpg",
-        disc: "¡Explora Pokémon en línea! Mi proyecto individual muestra personajes y características. ¡Descubre y captura en una experiencia interactiva! ¡Únete ahora!",
-        url: "https://pokedexmrickytech.netlify.app/"
-    }
+    
 ];
 
 var settings = {
